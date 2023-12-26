@@ -80,7 +80,6 @@ function Slider() {
       howlRef.current.seek(seekTime);
     }
   };
-
   const formatTime = (time) => {
     const minutes = Math.floor(time / 60);
     const seconds = Math.floor(time % 60);
@@ -90,8 +89,8 @@ function Slider() {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={3}
+      spaceBetween={1}     
+       slidesPerView={3}
       navigation
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
@@ -99,7 +98,7 @@ function Slider() {
     >
       {tracks.map((track, index) => (
         <SwiperSlide key={track.id}>
-          <div className='border-2 w-60 h-50 p-4 flex flex-col gap-4 hover:shadow-2xl text-white'>
+          <div className='border-2 w-60 h-50 p-4 flex flex-col gap-4 hover:shadow-2xl text-white '>
             <img className=' ' src="./elements/cheb.svg" alt="" />
             <p className='text-black font-bold'>{track.title}</p>
             <p>heloooooooo love u love u love u</p>
