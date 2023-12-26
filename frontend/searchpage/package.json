@@ -18,7 +18,8 @@
     "react-dom": "^18.2.0",
     "react-howler": "^5.2.0",
     "react-player": "^2.14.0",
-    "react-type-animation": "^3.2.0"
+    "react-type-animation": "^3.2.0",
+    "swiper": "^11.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

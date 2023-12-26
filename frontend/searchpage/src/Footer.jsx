@@ -2,25 +2,25 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='flex w-screen h-80 bg-black p-12 gap-20' >
+    <div className='flex w-screen h-80 bg-black p-12 gap-20 m-auto justify-between' >
         <div className='text-white'>
             <img src="./elements/logo.svg" alt="" />
             <p className='font-thin pl-9'>Music is the art of thinking with sounds.</p>
         </div>
-        <div className='flex flex-col gap-4 text-white'>
+        <div className='flex flex-col gap-4 text-white text-left'>
             <p className='font-bold'>Explore</p>
             <a className='font-thin text-white hover:underline hover:text-white' href="">Artists</a>
             <a  className='font-thin text-white hover:underline hover:text-white'  href="">Most popular release</a>
             <a  className='font-thin text-white hover:underline hover:text-white' href="">New releases</a>
             <a   className='font-thin text-white hover:underline hover:text-white' href="">Playlists</a>
         </div>
-        <div className='flex flex-col text-white  gap-12'>
+        <div className='flex flex-col text-white  gap-12 text-left' >
             <p>Get in touch</p>
             <p className='font-thin'>Remote
 we are a 100% remote team <br />use 
 out social links to reach us</p>
         </div>
-        <div className='text-white flex flex-col h-64'>
+        <div className='text-white flex flex-col h-64 text-left'>
             <p className='font-bold'>Contact us</p>
             <label className='font-light pb-1'htmlFor="">email-adresse</label>
             <input className='rounded text-black p-1' type="email" />
