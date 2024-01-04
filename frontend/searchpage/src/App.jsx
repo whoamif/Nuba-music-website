@@ -18,7 +18,7 @@ function App() {
   
   return (
     <>
-      <div className='flex flex-col w-screen min-h-screen m-auto bg-custom-bg-color scrol-x-hidden '>
+      <div className='flex flex-col w-screen min-h-screen m-auto bg-custom-bg-color scroll-x-hidden '>
         <Navbar isSearchVisible={isSearchVisible} toggleSearch={toggleSearch} ></Navbar>
         <div className='w-screen p-10 min-h-72 mt-24  felx  justify-center	'  onClick={closeSearch}>
          <div className='flex justify-center  text-white justify-self-end	'> <img  className='w-44'src=" ./elements/songs.svg" alt="" />  {/*<p className=' mt-4 '>Pull to see more </p>*/}</div> 
