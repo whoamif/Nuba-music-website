@@ -25,7 +25,7 @@ const Navbar = ({ isSearchVisible, toggleSearch }) => {
             Contact us
           </a>
           <a href="/join" className='hover:text-red-600 text-white'>
-            Join Us
+            Profile
           </a>
         </div>
         <div className='flex text-white mr-12 pl-12 text-lg  pt-4 cursor-pointer hover:left-1/4 gap-8'>

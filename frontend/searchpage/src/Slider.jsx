@@ -4,13 +4,14 @@ import { Howl } from 'howler';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
+
 const tracks = [
-  { id: 1, title: 'Track 1', audioSrc: './audios/snowman.mp3' },
-  { id: 2, title: 'Track 2', audioSrc: './audios/snowman.mp3' },
-  { id: 3, title: 'Track 3', audioSrc: './audios/snowman.mp3' },
-  { id: 4, title: 'Track 4', audioSrc: './audios/snowman.mp3' },
-  { id: 5, title: 'Track 5', audioSrc: './audios/snowman.mp3' },
-  { id: 6, title: 'Track 6', audioSrc: './audios/snowman.mp3' },
+  { id: 1, title: 'Track 1', audioSrc: './audios/snowman.mp3',urlimg:'./elements/kamel1.jpeg',descp:'ya hasra alik ya denya' },
+  { id: 2, title: 'Track 2', audioSrc: './audios/snowman.mp3' ,urlimg:'./elements/kamel2.png',descp:'mach Ghderdi'},
+  { id: 3, title: 'Track 3', audioSrc: './audios/snowman.mp3' ,urlimg:'./elements/kamel3.png',descp:'ya douniya' },
+  { id: 4, title: 'Track 4', audioSrc: './audios/snowman.mp3',urlimg:'./elements/kamel4.jpeg',descp:'Khaluha taamel ma brat' },
+  { id: 5, title: 'Track 5', audioSrc: './audios/snowman.mp3' ,urlimg:'./elements/kamel5.jpeg',descp:''},
+  { id: 6, title: 'Track 6', audioSrc: './audios/snowman.mp3' ,urlimg:'',descp:'ya hasra alik ya denya'},
 ];
 
 function Slider() {
@@ -97,19 +98,19 @@ function Slider() {
       className='mb-5 p-10 place-items-center'
     >
       {tracks.map((track, index) => (
-        <SwiperSlide key={track.id}>
-          <div className='border-2 w-60 h-50 p-4 flex flex-col gap-4 hover:shadow-2xl text-white '>
-            <img className=' ' src="./elements/cheb.svg" alt="" />
-            <p className='text-black font-bold'>{track.title}</p>
-            <p>heloooooooo love u love u love u</p>
-            <button
-              className='rounded-sm bg-blue-500 text-white hover:bg-red-200 hover:border-0'
-              onClick={() => trackChangeHandler(index)}
-            >
-              Play
-            </button>
-          </div>
-        </SwiperSlide>
+       <SwiperSlide key={track.id}>
+       <div className='border-2 w-60 h-50 p-4 flex flex-col gap-4 hover:shadow-2xl text-white'>
+         <img className='h-24 ' src={track.urlimg} alt="" />
+         <p className='text-black font-bold'>{track.title}</p>
+         <p>{track.descp}</p>
+         <button
+           className='rounded-sm bg-blue-500 text-white hover:bg-red-200 hover:border-0'
+           onClick={() => trackChangeHandler(index)}
+         >
+           Play
+         </button>
+       </div>
+     </SwiperSlide>
       ))}
       <div className='mt-7 text-white gap-5 flex flex-col place-items-center'>
         <input className='w-96 h-5' type="range" min="0" max={duration} value={currentTime} onChange={seekHandler} />

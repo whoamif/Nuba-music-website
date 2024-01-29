@@ -1,4 +1,3 @@
-// App.js
 import React, { useState } from 'react';
 import './App.css';
 import Navbar from './Navbar';
@@ -72,10 +71,10 @@ function App() {
                 <p>{name}</p>
               </div>
               <div className='font-thin text-lg'>
-                <span>4</span> Albums
+                <span>0</span> Albums
               </div>
               <div className='font-thin text-lg'>
-                <span>4</span> Songs
+                <span>0</span> Songs
               </div>
             </div>
             <FontAwesomeIcon
@@ -121,11 +120,8 @@ function App() {
             </div>
           </div>
         )}
-        <div className='mt-24'>
-          <Albums></Albums>
-        </div>
         <div>
-          <Slider></Slider>
+         
         </div>
         <Footer></Footer>
       </div>

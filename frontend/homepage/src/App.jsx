@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <div className='flex flex-col w-screen gap-12 min-h-full bg-custom-bg-color overflow-x-hidden			'>
+      <div className='flex flex-col w-screen gap-12 min-h-full bg-custom-bg-color overflow-x-hidden	'>
         <Navbar isSearchVisible={isSearchVisible} toggleSearch={toggleSearch} />
         <div
           className={`flex w-full h-4/5 bg-repeat pt-40 items-center justify-between text-white font-thin gap-4${

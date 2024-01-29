@@ -8,12 +8,12 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 
 const tracks = [
-  { id: 1, title: 'Track 1', audioSrc: './audios/snowman.mp3' },
-  { id: 2, title: 'Track 2', audioSrc: './audios/snowman.mp3' },
-  { id: 3, title: 'Track 3', audioSrc: './audios/snowman.mp3' },
-  { id: 4, title: 'Track 4', audioSrc: './audios/snowman.mp3' },
-  { id: 5, title: 'Track 5', audioSrc: './audios/snowman.mp3' },
-  { id: 6, title: 'Track 6', audioSrc: './audios/snowman.mp3' },
+  { id: 1, title: 'Track 1', audioSrc: './audios/snowman.mp3',descp:"nti sbabi w sbab blaya",urlimg:'./elements/khaled3.jpeg' },
+  { id: 2, title: 'Track 2', audioSrc: './audios/snowman.mp3' ,descp:"bkhata" ,urlimg:'./elements/khaled2.jpeg'},
+  { id: 3, title: 'Track 3', audioSrc: './audios/snowman.mp3' ,descp:"aicha",urlimg:'./elements/khaled1.jpeg' },
+  { id: 4, title: 'Track 4', audioSrc: './audios/snowman.mp3',descp:"snowman",urlimg:'./elements/snowman.jpeg' },
+  { id: 5, title: 'Track 5', audioSrc: './audios/snowman.mp3' ,descp:"lbayda mon amour",urlimg:'./elements/hasni.webp'},
+  { id: 6, title: 'Track 6', audioSrc: './audios/snowman.mp3',descp:"look around",urlimg:'./elements/alan.jpeg' },
 ];
 
 function Slider() {
@@ -103,9 +103,9 @@ function Slider() {
       {tracks.map((track, index) => (
         <SwiperSlide key={track.id}>
           <div className='border-2 w-60 h-50 p-4 flex flex-col gap-4 hover:shadow-2xl text-white '>
-            <img className=' ' src="./elements/cheb.svg" alt="" />
+            <img className='h-24' src={track.urlimg} alt="" />
             <p className='text-black font-bold'>{track.title}</p>
-            <p>heloooooooo love u love u love u</p>
+            <p>{track.descp}</p>
             <button
               className='rounded-sm bg-blue-500 text-white hover:bg-red-200 hover:border-0'
               onClick={() => trackChangeHandler(index)}
